@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun isPasswordValid(password: String): Boolean {
         val minLength = 8
-        val passwordPattern = "^(?=.*[0-9])(?=.*[@#\$%^&+=])(?=.*[A-Z])(?=.*[a-z]).{$minLength,}$"
+        val passwordPattern = "^(?=.*[0-9])(?=.*[@#\$%^&+=!])(?=.*[A-Z])(?=.*[a-z]).{$minLength,}$"
 
         return password.matches(Regex(passwordPattern))
     }
